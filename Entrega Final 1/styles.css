@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(120deg, #141e30, #243b55);
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  width: 400px;
+}
+
+input {
+  width: 90%;
+  height: 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  margin-top: 10px;
+}
+
+.time-container, .score-container {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.end-game-container {
+  display: none;
+  color: #fff;
+}
+
+button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0097a7;
+}

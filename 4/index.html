@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verificador de Jubilación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Verificador de edad para jubilación</h1>
+    <p class="lead">Ingresa tu edad y tu género para saber si ya cumpliste la edad mínima de jubilación.</p>
+
+    <form id="formJub" onsubmit="return false;">
+      <div>
+        <label for="edad">Edad</label>
+        <input id="edad" type="number" min="0" step="1" placeholder="Ej: 34" required />
+      </div>
+
+      <div>
+        <label for="genero">Género</label>
+        <select id="genero" required>
+          <option value="">-- Selecciona --</option>
+          <option value="Mujer">Mujer</option>
+          <option value="Hombre">Hombre</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <button id="btnComprobar" type="button">Comprobar</button>
+        <button id="btnReset" type="reset">Limpiar</button>
+      </div>
+
+      <div id="resultado" class="result" aria-live="polite" hidden></div>
+      <div class="hint">Nota: el criterio usado es 60 años para mujeres y 65 para hombres.</div>
+    </form>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  background-image: url("./assets/jnCXdAx.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  cursor: none; 
+}
+
+.raton {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  pointer-events: none; /* evita que bloquee eventos del mouse */
+  transition: top 0.2s ease, left 0.2s ease;
+}

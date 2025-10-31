@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars - CSS</title>
+</head>
+<body>
+
+    <style>
+        body {
+        font-family: 'Arial', sans-serif;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        }
+
+        h1, h2 {
+        text-shadow: 2px 2px 4px yellow;
+        }
+
+        .Imperio {
+        background-color: #b30000;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        }
+
+        .Rebeldes {
+        background-color: #0044cc;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        }
+
+        .Soldados {
+        border: 2px dashed white;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        padding: 10px;
+        }
+
+        .Apoyo {
+        text-align: center;
+        }
+
+        .Naves {
+        text-transform: uppercase;
+        background-color: #111;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        }
+
+        .Droides {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: #222;
+        padding: 20px;
+        border-radius: 10px;
+        }
+
+        #DarthVader {
+        font-size: 1.8em;
+        font-weight: bold;
+        }
+
+        #Luke {
+        font-style: italic;
+        }
+
+        footer {
+        margin-top: 30px;
+        padding: 10px;
+        background-color: #111;
+        border-top: 2px solid yellow;
+        }
+    </style>
+
+  <h1>CSS: Star Wars</h1>
+
+  <section class="Imperio">
+    <h2>Imperio</h2>
+    <p id="DarthVader">Darth Vader</p>
+    <div class="Soldados">
+      <p>Stormtroopers</p>
+      <p>Guardias Reales</p>
+    </div>
+  </section>
+
+  <section class="Rebeldes">
+    <h2>Rebeldes</h2>
+    <p id="Luke">Luke Skywalker</p>
+    <div class="Apoyo">
+      <p>Han Solo</p>
+      <p>Princesa Leia</p>
+    </div>
+  </section>
+
+  <section class="Naves">
+    <h2>Naves</h2>
+    <p>Millennium Falcon</p>
+    <p>Star Destroyer</p>
+    <p>X-Wing</p>
+  </section>
+
+  <section class="Droides">
+    <h2>Droides</h2>
+    <img src="https://placehold.co/150x150?text=R2-D2" alt="R2-D2">
+    <img src="https://placehold.co/150x150?text=C-3PO" alt="C-3PO">
+  </section>
+
+  <footer>
+    <p>¡Que la Fuerza te acompañe!</p>
+  </footer>
+
+</body>
+</html>
