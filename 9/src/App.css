@@ -1,0 +1,147 @@
+/* Paleta de colores "Onda 2025" (Modo oscuro) */
+:root {
+  --bg-color: #1a1a1b;
+  --post-bg: #272729;
+  --border-color: #4d4d4f;
+  --text-primary: #d7dadc;
+  --text-secondary: #a8a8a9;
+  --accent-blue: #4a90e2;
+  --error-red: #ff4500;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+/* Contenedor principal del post */
+.post-container {
+  background-color: var(--post-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  overflow: hidden; /* Para que la imagen no se salga de los bordes */
+}
+
+/* 1. Imagen y Texto */
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-text {
+  font-size: 1.1rem;
+  padding: 16px;
+  margin: 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* 2. Reacciones */
+.reactions-container {
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.reaction-btn {
+  background-color: #3a3a3c;
+  color: var(--text-primary);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+
+/* Mini animación opcional */
+.reaction-btn:hover {
+  background-color: #4a4a4c;
+}
+.reaction-btn:active {
+  transform: scale(1.1); /* Se anima al hacer click */
+}
+
+/* 3. Formulario de Comentarios */
+.comment-form {
+  display: flex;
+  padding: 16px;
+  gap: 10px;
+}
+
+.comment-input {
+  flex-grow: 1; /* Ocupa el espacio disponible */
+  background-color: #3a3a3c;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.comment-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.comment-btn {
+  background-color: var(--accent-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.comment-btn:hover {
+  background-color: #3a7bc8;
+}
+
+/* Mensaje de error */
+.error-message {
+  color: var(--error-red);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 16px 10px; /* Padding abajo */
+  margin: 0;
+  text-align: center;
+}
+
+/* 4. Lista de Comentarios (Bonus) */
+.comment-list {
+  padding: 0 16px 16px;
+}
+
+.comment-list h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.comment-item {
+  background-color: #3a3a3c;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.comment-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  /* Permite que el texto largo se corte */
+  word-wrap: break-word; 
+}
